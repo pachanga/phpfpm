@@ -1,0 +1,6 @@
+Usage example:
+
+include("phpfpm.inc.php");
+$filename = "/home/bob/tmp/foo.php";
+$response = phpfpm_request("localhost", 9000, $filename);
+var_dump($response)
